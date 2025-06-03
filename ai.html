@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars Jeopardy</title>
+    <link rel="stylesheet" href="css/ai.css" />
+</head>
+
+<body>
+    <h1>Star Wars Jeopardy</h1>
+    <div id="scoreboard">Score: <span id="score">0</span></div>
+
+    <div class="board">
+        <!-- === Category Headers === -->
+        <div class="category">Characters</div>
+        <div class="category">Planets</div>
+        <div class="category">Ships</div>
+        <div class="category">Quotes</div>
+        <div class="category">The Force</div>
+
+        <!-- === Row 1 ($100 clues) === -->
+        <div class="card" data-question="Who is Luke Skywalker?" data-value="100">
+            <div class="card-inner">
+                <div class="front">$100</div>
+                <div class="back">
+                    <p class="question">Who is Luke Skywalker?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="What is Tatooine?" data-value="100">
+            <div class="card-inner">
+                <div class="front">$100</div>
+                <div class="back">
+                    <p class="question">What is Tatooine?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="What is the Millennium Falcon?" data-value="100">
+            <div class="card-inner">
+                <div class="front">$100</div>
+                <div class="back">
+                    <p class="question">What is the Millennium Falcon?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="“I am your father.” Who said this?" data-value="100">
+            <div class="card-inner">
+                <div class="front">$100</div>
+                <div class="back">
+                    <p class="question">“I am your father.” Who said this?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="What is the Force?" data-value="100">
+            <div class="card-inner">
+                <div class="front">$100</div>
+                <div class="back">
+                    <p class="question">What is the Force?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- === Row 2 ($200 clues) === -->
+        <div class="card" data-question="Who is Darth Vader?" data-value="200">
+            <div class="card-inner">
+                <div class="front">$200</div>
+                <div class="back">
+                    <p class="question">Who is Darth Vader?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="What is Hoth?" data-value="200">
+            <div class="card-inner">
+                <div class="front">$200</div>
+                <div class="back">
+                    <p class="question">What is Hoth?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="What is a Star Destroyer?" data-value="200">
+            <div class="card-inner">
+                <div class="front">$200</div>
+                <div class="back">
+                    <p class="question">What is a Star Destroyer?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="“Do or do not, there is no try.” Who said this?" data-value="200">
+            <div class="card-inner">
+                <div class="front">$200</div>
+                <div class="back">
+                    <p class="question">“Do or do not, there is no try.” Who said this?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="What is a Jedi’s Mind Trick?" data-value="200">
+            <div class="card-inner">
+                <div class="front">$200</div>
+                <div class="back">
+                    <p class="question">What is a Jedi’s Mind Trick?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- === Row 3 ($300 clues) === -->
+        <div class="card" data-question="Who is Princess Leia?" data-value="300">
+            <div class="card-inner">
+                <div class="front">$300</div>
+                <div class="back">
+                    <p class="question">Who is Princess Leia?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="What is Endor?" data-value="300">
+            <div class="card-inner">
+                <div class="front">$300</div>
+                <div class="back">
+                    <p class="question">What is Endor?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="What is an X-Wing?" data-value="300">
+            <div class="card-inner">
+                <div class="front">$300</div>
+                <div class="back">
+                    <p class="question">What is an X-Wing?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="“It’s a trap!” Who said this?" data-value="300">
+            <div class="card-inner">
+                <div class="front">$300</div>
+                <div class="back">
+                    <p class="question">“It’s a trap!” Who said this?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-question="What are Midichlorians?" data-value="300">
+            <div class="card-inner">
+                <div class="front">$300</div>
+                <div class="back">
+                    <p class="question">What are Midichlorians?</p>
+                    <button class="correct-btn">Correct</button>
+                    <button class="wrong-btn">Wrong</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== JavaScript ========== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let score = 0;
+            const scoreSpan = document.getElementById('score');
+            const cards = document.querySelectorAll('.card');
+
+            cards.forEach(card => {
+                const value = parseInt(card.getAttribute('data-value'), 10);
+                const correctBtn = card.querySelector('.correct-btn');
+                const wrongBtn = card.querySelector('.wrong-btn');
+
+                // 1) Flip the card on click (only if not already flipped or done)
+                card.addEventListener('click', () => {
+                    if (!card.classList.contains('flipped') && !card.classList.contains('done')) {
+                        card.classList.add('flipped');
+                    }
+                });
+
+                // 2) “Correct” button: add points and mark as done
+                correctBtn.addEventListener('click', (e) => {
+                    e.stopPropagation(); // prevent triggering the flip again
+                    score += value;
+                    scoreSpan.textContent = score;
+                    card.classList.add('done');
+                });
+
+                // 3) “Wrong” button: subtract points and mark as done
+                wrongBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    score -= value;
+                    scoreSpan.textContent = score;
+                    card.classList.add('done');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
